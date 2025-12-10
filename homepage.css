@@ -21,14 +21,17 @@
             background-size: cover;
             font-family: 'Times New Roman', Times, serif;
             font-size: 40px;
+            
         }
-         h3{
+       
+      h3{
             font-family: Arial, Helvetica, sans-serif;
             padding-bottom: 10px;
             
          }
        
-        h1,h2{
+        h1{
+        font-family: 'Times New Roman', Times, serif;
         text-transform: capitalize;
         text-align: center;
         background: linear-gradient(to right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff);
@@ -42,3 +45,4 @@
         to{
             background-position: 200%;
         }
+    }
