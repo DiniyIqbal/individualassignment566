@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- HTML5 document declaration -->
+<html lang="en">
+<head>
+    <!-- Page metadata and external resources -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="productcss.css">
+     <link id='favicon' rel="shortcut icon" href="images/logo1.png" type="image/x-png">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+</head>
+<body class="bg-gray-500 font-sans min-h-screen">
+    <!-- Navigation section -->
+    <nav class="bg-orange-950 text-white p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="flex items-center">
+                <a class="text-2xl md:text-4xl font-bold" href="homepage.html">
+                    <img src="images/logo1.png" class="h-8 md:h-10 w-15 md:w-15 mr-2 md:mr-4 object-cover rounded-md">
+                </a>
+                <a class="text-2xl md:text-4xl font-bold" href="homepage.html">Welcome to WORLD STORE</a>
+            </h1>
+            <div class="flex items-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">
+                <a class="
+                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
+                    text-xs md:text-sm font-semibold 
+                    rounded-full 
+                    bg-sky-100 text-slate-950 
+                    hover:bg-yellow-600 
+                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
+                    active:bg-violet-700
+                    transition duration-150 ease-in-out
+                    " href="products.html">PRODUCTS</a>
+                
+                <a class="
+                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
+                    text-xs md:text-sm font-semibold 
+                    rounded-full 
+                    bg-sky-100 text-slate-950 
+                    hover:bg-yellow-600
+                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
+                    active:bg-violet-700
+                    transition duration-150 ease-in-out
+                    " href="orders.html">ORDERS</a>
+
+                <a class="
+                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
+                    text-xs md:text-sm font-semibold 
+                    rounded-full 
+                    bg-sky-100 text-slate-950 
+                    hover:bg-yellow-600 
+                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
+                    active:bg-violet-700
+                    transition duration-150 ease-in-out
+                    " href="users.html">USERS</a>
+
+                <a class="
+                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
+                    text-xs md:text-sm font-semibold 
+                    rounded-full 
+                    bg-sky-100 text-slate-950 
+                    hover:bg-yellow-600 
+                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
+                    active:bg-violet-700
+                    transition duration-150 ease-in-out
+                    " href="index.html">LOG OUT</a>
+            </div>
+        </div>
+    </nav>
+        
+    <!-- Main content section -->
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold mt-8 mb-8">WORLD STORE Dashboard</h1>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md mb-8">
+        <h3 class="text-2xl text-center text-white font-bold mb-4">Total Purchased by Product</h3>
+        <canvas id="productsChart" class="bg-sky-100 rounded-xl" width="400" height="140"></canvas>
+    </div>
+        
+        
+    <div class="bg-sky-100 p-6 rounded-xl shadow-md mb-8">
+        <h3 class="text-2xl text-center font-bold mb-4">List of Users</h3>
+        <table class="min-w-full table-auto">
+            <thead>
+                <tr class="bg-green-500">
+                    <th class="px-4 py-2 text-left">ID</th>
+                    <th class="px-4 py-2 text-left">Name</th>
+                    <th class="px-4 py-2 text-left">Email</th>
+                <th class="px-4 py-2 text-left">Joined Date</th>
+                </tr>
+            </thead>
+                <tbody id="usersTableBody">
+
+        </tbody>
+        </table>
+        </div>
+        
+    <div class="bg-sky-100 p-6 rounded-lg shadow-md mb-8">
+            <h3 class="text-2xl text-center font-bold mb-4">Total Products Purchased</h3>
+            <table class="min-w-full table-auto">
+            <thead>
+                <tr class="bg-yellow-500">
+                    <th class="px-4 py-2 text-left">Product Name</th>
+                    <th class="px-4 py-2 text-left">Category</th>
+                    <th class="px-4 py-2 text-left">Price (RM)</th>
+                    <th class="px-4 py-2 text-left">Total Purchased</th>
+                </tr>
+    </thead>
+    <tbody id="productsTableBody">
+                    
+    </tbody>
+        </table>
+        </div>
+        
+    <div class="bg-sky-100 p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl text-center font-bold mb-4">Shipping Status</h3>
+            <table class="min-w-full table-auto">
+            <thead>
+                <tr class="bg-red-300">
+                     <th class="px-4 py-2 text-left">Order ID</th>
+                    <th class="px-4 py-2 text-left">Product</th>
+                    <th class="px-4 py-2 text-left">Status</th>
+                    <th class="px-4 py-2 text-left">Tracking Number</th>
+                </tr>
+            </thead>
+            <tbody id="shippingTableBody">
+            </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scripts section -->
+    <script src="charts.js"></script>
+
+    <!-- Footer section -->
+     <footer class="bg-slate-800 text-white py-4 px-4 text-center text-sm">
+        &copy; 2025 WORLDSTORE. All Rights Reserved.
+    </footer>
+</body>
+</html>

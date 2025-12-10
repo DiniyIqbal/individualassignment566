@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="productcss.css">
+     <link id='favicon' rel="shortcut icon" href="images/logo1.png" type="image/x-png">
+</head>
+<body class="bg-gray-500 font-sans min-h-screen">
+     <nav class="bg-orange-950 text-white p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="flex items-center">
+                <a class="text-2xl md:text-4xl font-bold" href="homepage.html">
+                    <img src="images/logo1.png" class="h-8 md:h-10 w-15 md:w-15 mr-2 md:mr-4 object-cover rounded-md">
+                </a>
+                <a class="text-2xl md:text-4xl font-bold" href="homepage.html">World Store</a>
+            </h1>
+            <div class="flex items-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">
+                <a class="
+                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
+                    text-xs md:text-sm font-semibold 
+                    rounded-full 
+                    bg-sky-100 text-slate-950 
+                    hover:bg-yellow-600 
+                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
+                    active:bg-violet-700
+                    transition duration-150 ease-in-out
+                    " href="products.html">PRODUCTS</a>
+                
+                <a class="
+                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
+                    text-xs md:text-sm font-semibold 
+                    rounded-full 
+                    bg-sky-100 text-slate-950 
+                    hover:bg-yellow-600
+                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
+                    active:bg-violet-700
+                    transition duration-150 ease-in-out
+                    " href="orders.html">ORDERS</a>
+
+                <a class="
+                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
+                    text-xs md:text-sm font-semibold 
+                    rounded-full 
+                    bg-sky-100 text-slate-950 
+                    hover:bg-yellow-600 
+                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
+                    active:bg-violet-700
+                    transition duration-150 ease-in-out
+                    " href="users.html">USERS</a>
+
+                <a class="
+                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
+                    text-xs md:text-sm font-semibold 
+                    rounded-full 
+                    bg-sky-100 text-slate-950 
+                    hover:bg-yellow-600 
+                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
+                    active:bg-violet-700
+                    transition duration-150 ease-in-out
+                    " href="index.html">LOG OUT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="max-w-7xl mx-auto mb-11 p-8">
+
+        <section class="flex flex-col lg:flex-row items-start justify-between pt-15 pb-12 min-h-[55vh]">
+            <div class="lg:w-1/2 mb-10 space-y-6">
+
+            <h2 class="mt-0 text-4xl md:text-5xl font-extrabold leading-snug text-black gradient-text">
+                    We Provide Everything <br>
+                    You Need With A Guarantee on Authentic Products In Our Store
+            </h2>
+
+                <p class="text-xl md:text-xl text-sky-100 font-medium leading-relaxed">
+
+                    World Store provides a variety of electronic devices with numerous international brands and provides the best services for customers. Scroll down for products details.
+
+                </p>
+
+                <a href="orders.html" class="inline-block text-xl md:text-2x bg-red-600 hover:bg-blue-700 text-white font-semibold py-3 px-10 rounded-lg shadow-xl transition duration-300">
+
+                    Let's Buy Now
+
+                </a>
+
+            </div>
+
+
+
+        <div class="lg:w-1/2 ml-0 lg:ml-8 flex justify-center lg:justify-end">
+        <img src="images/logo1.png" class="bg-center h-80 object-cover rounded-xl transition-opacity duration-500 opacity-100 hover:opacity-75 w-full max-w-lg shadow-2xl">
+        </div>
+        </section>
+
+    </div>
+
+
+    <main class="bg-orange-950 mx-auto px-4 py-6">
+    <h1 class="text-4xl font-bold mb-8">Scroll Down</h1>
+    <table class="min-w-full bg-white shadow-md rounded-lg">
+        <thead class="bg-yellow-400">
+                <tr>
+                    <th class="px-1 py-4 text-left text-sm font-medium text-gray-700">Bil.</th>
+                    <th class="px-2 py-2 text-left text-sm font-medium text-gray-700">Product</th>
+                    <th class="px-1 py-2 text-left text-sm font-medium text-gray-700">Price</th>
+                    <th class="px-2 py-2 text-left text-sm font-medium text-gray-700">Category</th>
+                </tr>
+        </thead>
+    <tbody id="products-table-body" class="divide-y divide-gray-800"></tbody>
+    </table>
+   <div class="multimedia-container">
+    <div class="grid grid-cols-repeat(auto-fit,minmax(280px,1fr)) gap-5 p-5 pt-24 max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">Asus Tuf Gaming A18</h1>
+        <div class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden relative transition duration-300 ease-in-out hover:scale-[1.05] hover:shadow-2xl hover:ring-4 hover:ring-pink-600">
+            <div class="w-full h-72">
+                <img src="images/t.png" class="w-full h-full block object-cover">
+            </div>
+            
+            <div class="p-4">
+                <p class="text-gray-700 text-2xl font-bold mb-8">ASUS TUF GAMING A18 :
+            Robust Performance, Elevated Victory.<br>
+            RM 3099</p>
+                
+
+                    <a href="orders.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition hover:bg-indigo-700">Click to Buy</a>
+                </div>
+            </div>
+        </div>
+
+       <div class="multimedia-container">
+    <div class="grid grid-cols-repeat(auto-fit,minmax(280px,1fr)) gap-5 p-5 pt-24 max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">ROG Zephyrus G16</h1>
+        <div class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden relative transition duration-300 ease-in-out hover:scale-[1.05] hover:shadow-2xl hover:ring-4 hover:ring-pink-600">
+            <div class="w-full h-72">
+                <img src="images/z.png" class="w-full h-full block object-cover">
+            </div>
+            
+            <div class="p-4">
+                <p class="text-gray-700 text-2xl font-bold mb-8">ROG ZEPHYRUS G16 (GU605) Performance Meets Precision<br>
+                RM 9099
+                </p>
+                
+
+                    <a href="orders.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition hover:bg-indigo-700">Click to Buy</a>
+                </div>
+            </div>
+        </div>
+
+    
+
+
+        <div class="multimedia-container">
+    <div class="grid grid-cols-repeat(auto-fit,minmax(280px,1fr)) gap-5 p-5 pt-24 max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">Iphone 17 Pro Max</h1>
+        <div class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden relative transition duration-300 ease-in-out hover:scale-[1.05] hover:shadow-2xl hover:ring-4 hover:ring-pink-600">
+            <div class="w-full h-72">
+                <img src="images/i.png" class="w-full h-full block object-cover">
+            </div>
+            
+            <div class="p-4">
+                <p class="text-gray-700 text-2xl font-bold mb-8">Iphone 17 Pro Max 256GB<br>RM 5099</p>
+                
+
+                    <a href="orders.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition hover:bg-indigo-700">Click to Buy</a>
+                </div>
+            </div>
+        </div>
+
+
+
+       <div class="multimedia-container">
+    <div class="grid grid-cols-repeat(auto-fit,minmax(280px,1fr)) gap-5 p-5 pt-24 max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">Samsung S25</h1>
+        <div class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden relative transition duration-300 ease-in-out hover:scale-[1.05] hover:shadow-2xl hover:ring-4 hover:ring-pink-600">
+            <div class="w-full h-72">
+                <img src="images/s.png" class="w-full h-full block object-cover">
+            </div>
+            
+            <div class="p-4">
+                <p class="text-gray-700 text-2xl font-bold mb-8">Samsung Galaxy S25+<br>RM 3099</p>
+                
+
+                    <a href="orders.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition hover:bg-indigo-700">Click to Buy</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="multimedia-container">
+    <div class="grid grid-cols-repeat(auto-fit,minmax(280px,1fr)) gap-5 p-5 pt-24 max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">Steam Deck OLED</h1>
+        <div class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden relative transition duration-300 ease-in-out hover:scale-[1.05] hover:shadow-2xl hover:ring-4 hover:ring-pink-600">
+            <div class="w-full h-72">
+                <img src="images/d.png" class="w-full h-full block object-cover">
+            </div>
+            
+            <div class="p-4">
+                <p class="text-gray-700 text-2xl font-bold mb-8">Steam Deck OLED<br>RM 3599</p>
+                
+
+                    <a href="orders.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition hover:bg-indigo-700">Click to Buy</a>
+                </div>
+            </div>
+        </div>
+
+        
+       <div class="multimedia-container">
+    <div class="grid grid-cols-repeat(auto-fit,minmax(280px,1fr)) gap-5 p-5 pt-24 max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">PlayStation® Portable</h1>
+        <div class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden relative transition duration-300 ease-in-out hover:scale-[1.05] hover:shadow-2xl hover:ring-4 hover:ring-pink-600">
+            <div class="w-full h-72">
+                <img src="images/p.png" class="w-full h-full block object-cover">
+            </div>
+            
+            <div class="p-4">
+                <p class="text-gray-700 text-2xl font-bold mb-8"> Sony PlayStation® Portable<br>RM 1099</p>
+                
+
+                    <a href="orders.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition hover:bg-indigo-700">Click to Buy</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+    </main>
+
+    
+    <script src="product.js"></script>
+    <script>renderProducts();</script>
+
+ <footer class="bg-slate-800 text-white py-4 px-4 text-center text-sm">
+        &copy; 2025 WORLDSTORE. All Rights Reserved.
+    </footer>
+</body>
+</html>

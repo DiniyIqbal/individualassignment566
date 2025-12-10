@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Lists</title>
+    <!-- This is the main CSS framework we're using for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon for the browser tab -->
+    <link id='favicon' rel="shortcut icon" href="images/logo1.png" type="image/x-png">
+    <!-- Custom CSS file for additional styles -->
+    <link rel="stylesheet" href="user.css">
+    <!-- Custom styles for cool effects -->
+</head>
+<body class="bg-gray-500 font-sans min-h-screen">
+    <!-- Navigation bar at the top of the page -->
+    <nav class="bg-orange-950 text-white p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo and title section -->
+            <h1 class="flex items-center">
+                <a class="text-2xl md:text-4xl font-bold" href="homepage.html">
+                    <img src="images/logo1.png" class="h-8 md:h-10 w-15 md:w-15 mr-2 md:mr-4 object-cover rounded-md" alt="World Store Logo">
+                </a>
+                <a class="text-2xl md:text-4xl font-bold" href="homepage.html">World Store</a>
+            </h1>
+            <div class="flex items-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">
+                <a class="h-8 md:h-10 px-3 md:px-4 flex items-center justify-center text-xs md:text-sm font-semibold rounded-full bg-sky-100 text-slate-950 hover:bg-yellow-600 focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none active:bg-violet-700 transition duration-150 ease-in-out" href="products.html">PRODUCTS</a>
+                
+                <a class="h-8 md:h-10 px-3 md:px-4 flex items-center justify-center text-xs md:text-sm font-semibold rounded-full bg-sky-100 text-slate-950 hover:bg-yellow-600 focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none active:bg-violet-700 transition duration-150 ease-in-out" href="orders.html">ORDERS</a>
+
+                <a class="h-8 md:h-10 px-3 md:px-4 flex items-center justify-center text-xs md:text-sm font-semibold rounded-full bg-sky-100 text-slate-950 hover:bg-yellow-600 focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none active:bg-violet-700 transition duration-150 ease-in-out" href="users.html">USERS</a>
+
+                <a class="h-8 md:h-10 px-3 md:px-4 flex items-center justify-center text-xs md:text-sm font-semibold rounded-full bg-sky-100 text-slate-950 hover:bg-yellow-600 focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none active:bg-violet-700 transition duration-150 ease-in-out" href="index.html">LOG OUT</a>
+            </div>
+        </div>
+    </nav>
+ 
+      <h1 class="text-3xl font-bold mt-4 ">List of Registered Users</h1>
+    <main class="max-w-7xl mx-auto p-8 fade-in">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- User card 1 -->
+            <div class="bg-gradient-to-br from-white to-gray-100 rounded-lg shadow-lg p-6 user-card">
+                <img src="images/nasir.png" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-orange-400" alt="Mohd Nasir">
+                <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Mohd Nasir</h3>
+                <p class="text-gray-600 text-center mb-1"><strong>Username:</strong> Nasir</p>
+                <p class="text-gray-600 text-center mb-1"><strong>Password:</strong> Nasir123</p>
+                <p class="text-gray-600 text-center"><strong>Address:</strong> Kota Kinabalu, Sabah</p>
+            </div>
+            
+            <!-- User card 2 -->
+            <div class="bg-gradient-to-br from-white to-gray-100 rounded-lg shadow-lg p-6 user-card">
+                <img src="images/izam.png" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-orange-400" alt="Noorizam">
+                <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Noorizam</h3>
+                <p class="text-gray-600 text-center mb-1"><strong>Username:</strong> Izam</p>
+                <p class="text-gray-600 text-center mb-1"><strong>Password:</strong> Izam123</p>
+                <p class="text-gray-600 text-center"><strong>Address:</strong> Kuching, Sarawak</p>
+            </div>
+            
+            <!-- User card 3 -->
+            <div class="bg-gradient-to-br from-white to-gray-100 rounded-lg shadow-lg p-6 user-card">
+                <img src="images/zarul.png" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-orange-400" alt="Zarul">
+                <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Zarul</h3>
+                <p class="text-gray-600 text-center mb-1"><strong>Username:</strong> Zarul</p>
+                <p class="text-gray-600 text-center mb-1"><strong>Password:</strong> Zarul123</p>
+                <p class="text-gray-600 text-center"><strong>Address:</strong> Besut, Terengganu</p>
+            </div>
+           
+            <!-- User card 4 -->
+            <div class="bg-gradient-to-br from-white to-gray-100 rounded-lg shadow-lg p-6 user-card">
+                <img src="images/zuhaimi.png" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-orange-400" alt="Zuhaimi">
+                <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Zuhaimi</h3>
+                <p class="text-gray-600 text-center mb-1"><strong>Username:</strong> Zuhaimi</p>
+                <p class="text-gray-600 text-center mb-1"><strong>Password:</strong> Zuhaimi123</p>
+                <p class="text-gray-600 text-center"><strong>Address:</strong> Butterworth, Pulau Pinang</p>
+            </div>
+        
+            <!-- User card 5 -->
+            <div class="bg-gradient-to-br from-white to-gray-100 rounded-lg shadow-lg p-6 user-card">
+                <img src="images/malik.png" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-orange-400" alt="Malik">
+                <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Malik</h3>
+                <p class="text-gray-600 text-center mb-1"><strong>Username:</strong> Malik</p>
+                <p class="text-gray-600 text-center mb-1"><strong>Password:</strong> Malik123</p>
+                <p class="text-gray-600 text-center"><strong>Address:</strong> Alor Setar, Kedah</p>
+            </div>
+
+            <!-- User card 6 -->
+            <div class="bg-gradient-to-br from-white to-gray-100 rounded-lg shadow-lg p-6 user-card">
+                <img src="images/roslan.png" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-orange-400" alt="Roslan">
+                <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Roslan</h3>
+                <p class="text-gray-600 text-center mb-1"><strong>Username:</strong> Roslan</p>
+                <p class="text-gray-600 text-center mb-1"><strong>Password:</strong> Roslan123</p>
+                <p class="text-gray-600 text-center"><strong>Address:</strong> Cheras, Selangor</p>
+            </div>
+        </div>
+
+        <!-- Section for registered users table -->
+        <div class="mt-12">
+            <h3 class="bg-gradient-to-r from-purple-500 to-pink-500 text-center text-3xl rounded-2xl text-white mb-6 py-4 font-bold shadow-lg">Registered Users</h3>
+            <!-- Table with horizontal scroll on small screens -->
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-gradient-to-br from-white to-gray-50 rounded-lg shadow-xl">
+                    <!-- Table header -->
+                    <thead class="bg-gradient-to-r from-blue-500 to-teal-500 text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold rounded-tl-lg">Name</th>
+                            <th class="px-6 py-4 text-left font-semibold">Email</th>
+                            <th class="px-6 py-4 text-left font-semibold">Phone Number</th>
+                            <th class="px-6 py-4 text-left font-semibold">Date</th>
+                            <th class="px-6 py-4 text-left font-semibold rounded-tr-lg">Place</th>
+                        </tr>
+                    </thead>
+                    <!-- Table body -->
+                    <tbody>
+                        <tr class="border-b border-gray-200 table-row">
+                            <td class="px-6 py-4">Mohd Nasir</td>
+                            <td class="px-6 py-4">nasir@gmail.com</td>
+                            <td class="px-6 py-4">011-550202</td>
+                            <td class="px-6 py-4">2025-01-11</td>
+                            <td class="px-6 py-4">Kota Kinabalu, Sabah</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 table-row">
+                            <td class="px-6 py-4">Noorizam</td>
+                            <td class="px-6 py-4">noorizam@gmail.com</td>
+                            <td class="px-6 py-4">013-9876543</td>
+                            <td class="px-6 py-4">2025-04-10</td>
+                            <td class="px-6 py-4">Kuching, Sarawak</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 table-row">
+                            <td class="px-6 py-4">Zarul</td>
+                            <td class="px-6 py-4">zarul22@gmail.com</td>
+                            <td class="px-6 py-4">011-10101052</td>
+                            <td class="px-6 py-4">2025-05-12</td>
+                            <td class="px-6 py-4">Besut, Terengganu</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 table-row">
+                            <td class="px-6 py-4">Zuhaimi</td>
+                            <td class="px-6 py-4">zuhaimi33@gmail.com</td>
+                            <td class="px-6 py-4">011-2561178</td>
+                            <td class="px-6 py-4">2025-05-10</td>
+                            <td class="px-6 py-4">Kuching, Sarawak</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 table-row">
+                            <td class="px-6 py-4">Malik</td>
+                            <td class="px-6 py-4">malik88@gmail.com</td>
+                            <td class="px-6 py-4">019-939365</td>
+                            <td class="px-6 py-4">2025-05-12</td>
+                            <td class="px-6 py-4">Alor Setar</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4">Roslan</td>
+                            <td class="px-6 py-4">roslan11@gmail.com</td>
+                            <td class="px-6 py-4">019-939365</td>
+                            <td class="px-6 py-4">2025-07-18</td>
+                            <td class="px-6 py-4">Cheras, Selangor</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <video id="bg-video" autoplay muted loop playsinline>
+    <source src="images/bgv.mp4" type="video/mp4">
+<   /video>
+    </main>
+  
+    <footer class="bg-slate-800 text-white py-4 px-4 text-center text-sm">
+        &copy; 2025 WORLDSTORE. All Rights Reserved.
+    </footer>
+</body>
+</html>

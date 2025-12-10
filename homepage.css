@@ -1,0 +1,44 @@
+@keyframes appear {
+            from {
+                opacity: 0;
+                clip-path: inset(100% 100% 0 0);
+            }
+            to {
+                opacity: 5;
+                clip-path: inset(0 0 0 0);
+            }
+        }
+
+        .block-animate {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 70% cover 20%;
+        }
+
+        body {
+            background-image:url(images/bg5.png); 
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+         h3{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 10px;
+            
+         }
+       
+        h1,h2{
+        text-transform: capitalize;
+        text-align: center;
+        background: linear-gradient(to right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate-gradient 1.5s linear infinite ;
+        }
+        @keyframes animate-gradient {
+        to{
+            background-position: 200%;
+        }

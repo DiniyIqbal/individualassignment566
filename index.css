@@ -1,0 +1,31 @@
+/* Body styles includes custom font, background (image,position,) */
+body { 
+    font-family: Arial, sans-serif; 
+    background-image: url("images/bg1.png");
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-position: center, 0 0, right bottom;
+}
+
+/* H2 heading: Custom font, size, gradient text effect with animation. Adjust colors in 'background' for different criterias. */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    background: linear-gradient(to right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 1.5s linear infinite ;
+}
+
+/* Animation for h2 gradient: Moves the gradient for a flowing effect. Animation '1.5s' for speed. */
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+}
+
+/* Chart container:for chart customise purpose*/
+.chart-container { max-width: 600px; margin: 0 auto; }

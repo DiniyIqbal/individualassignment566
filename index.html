@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive design for mobile. -->
+    <title>World Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS framework. -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js for graphs. -->
+    <link rel="stylesheet" href="index.css">
+    <!--CSS file. -->
+    <link id='favicon' rel="shortcut icon" href="images/logo1.png" type="image/x-png">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <div class="flex-grow flex items-center justify-center">
+    <div class="max-w-md w-full bg-white shadow-md rounded-lg p-7 mt-40 mr-7">
+            <!-- Login card container. -->
+            <h2 class="text-3xl font-bold text-center mb-4">Login to World Store</h2>
+            <form onsubmit="event.preventDefault(); login();">
+                <!-- Login form. -->
+            <div class="mb-4">
+                <!-- Username input section. -->
+                <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                <input type="text" class="mt-1 block w-full px-3 py-2 border border-yellow-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" id="username" required>
+            </div>
+            <div class="mb-4">
+                <!-- Password input section. -->
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" class="mt-1 block w-full px-3 py-2 border border-yellow-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" id="password" required>
+             </div>
+            <button type="submit" class="w-full bg-yellow-500 text-white py-2 px-4 rounded-md hover:bg-green-700">Login</button>
+            <!-- Submit button. -->
+            </form>
+            <p id="error" class="text-red-500 mt-3"></p>
+            <p class="mt-3 text-sm text-gray-600">Guest : Guest / G123</p>
+            <!-- Demo login hint. -->
+        </div>
+    </div>
+    <footer class="bg-slate-800 text-white py-4 px-4 text-center text-sm">
+        &copy; 2025 WORLDSTORE. All Rights Reserved.
+    </footer>
+    <script src="index.js"></script>
+    <!-- JavaScript file for login. -->
+</body>
+</html>
