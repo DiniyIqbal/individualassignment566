@@ -1,189 +1,193 @@
-<!-- HTML5 document declaration -->
 <!DOCTYPE html>
 <html lang="en">
-<!-- Page head with metadata and links -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Section</title>
+    <!-- Tailwind CSS CDN for simple and easier styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SVG icons -->
     <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js" type="module"></script>
+    <!-- Google Font libraries -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="orders.css">
 </head>
-<!-- Body with full height and gray text -->
 <body class="min-h-screen text-gray-800">
-    <!-- Navigation bar -->
-    <nav class="bg-orange-950 text-white p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <h1 class="flex items-center">
-                <a class="text-2xl md:text-4xl font-bold" href="homepage.html">
-                    <img src="images/logo1.png" class="h-8 md:h-10 w-15 md:w-15 mr-2 md:mr-4 object-cover rounded-md">
-                </a>
-                <a class="text-2xl md:text-4xl font-bold" href="homepage.html">World Store</a>
-            </h1>
-            <div class="flex items-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">
-                <a class="
-                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
-                    text-xs md:text-sm font-semibold 
-                    rounded-full 
-                    bg-sky-100 text-slate-950 
-                    hover:bg-yellow-600 
-                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
-                    active:bg-violet-700
-                    transition duration-150 ease-in-out
-                    " href="products.html">PRODUCTS</a>
-                
-                <a class="
-                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
-                    text-xs md:text-sm font-semibold 
-                    rounded-full 
-                    bg-sky-100 text-slate-950 
-                    hover:bg-yellow-600
-                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
-                    active:bg-violet-700
-                    transition duration-150 ease-in-out
-                    " href="orders.html">ORDERS</a>
+<nav class="bg-orange-950 text-white p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        
+        <h1 class="flex items-center">
+            <a class="text-2xl md:text-4xl font-bold" href="homepage.html">
+                <img src="images/logo1.png" class="h-8 md:h-10 w-15 md:w-15 mr-2 md:mr-4 object-cover rounded-md">
+            </a>
+            <a class="text-2xl md:text-4xl font-bold" href="homepage.html">World Store</a>
+        </h1>
 
-                <a class="
-                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
-                    text-xs md:text-sm font-semibold 
-                    rounded-full 
-                    bg-sky-100 text-slate-950 
-                    hover:bg-yellow-600 
-                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
-                    active:bg-violet-700
-                    transition duration-150 ease-in-out
-                    " href="users.html">USERS</a>
+        <!-- Navigation section -->
+        <div class="flex items-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">
 
-                <a class="
-                    h-8 md:h-10 px-3 md:px-4 flex items-center justify-center 
-                    text-xs md:text-sm font-semibold 
-                    rounded-full 
-                    bg-sky-100 text-slate-950 
-                    hover:bg-yellow-600 
-                    focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-orange-950 focus:outline-none 
-                    active:bg-violet-700
-                    transition duration-150 ease-in-out
-                    " href="index.html">LOG OUT</a>
-            </div>
+            <!-- navigation linked page -->
+            <a class="
+                h-8 md:h-10 px-3 md:px-4 flex items-center justify-center
+                text-xs md:text-sm font-semibold rounded-full bg-sky-100 text-slate-950
+                hover:bg-yellow-600 focus:ring-2 focus:ring-violet-500 focus:ring-offset-2
+                focus:ring-offset-orange-950 active:bg-violet-700 transition
+            " href="products.html">PRODUCTS</a>
+
+            <!-- Orders Page Link -->
+            <a class="
+                h-8 md:h-10 px-3 md:px-4 flex items-center justify-center
+                text-xs md:text-sm font-semibold rounded-full bg-sky-100 text-slate-950
+                hover:bg-yellow-600 focus:ring-2 focus:ring-violet-500 focus:ring-offset-2
+                focus:ring-offset-orange-950 active:bg-violet-700 transition
+            " href="orders.html">ORDERS</a>
+
+            <!-- Users Page Link -->
+            <a class="
+                h-8 md:h-10 px-3 md:px-4 flex items-center justify-center
+                text-xs md:text-sm font-semibold rounded-full bg-sky-100 text-slate-950
+                hover:bg-yellow-600 focus:ring-2 focus:ring-violet-500 focus:ring-offset-2
+                focus:ring-offset-orange-950 active:bg-violet-700 transition
+            " href="users.html">USERS</a>
+
+            <!-- Logout Button -->
+            <a class="
+                h-8 md:h-10 px-3 md:px-4 flex items-center justify-center
+                text-xs md:text-sm font-semibold rounded-full bg-sky-100 text-slate-950
+                hover:bg-yellow-600 focus:ring-2 focus:ring-violet-500 focus:ring-offset-2
+                focus:ring-offset-orange-950 active:bg-violet-700 transition
+            " href="index.html">LOG OUT</a>
         </div>
-    </nav>
-    <!-- Main order section container -->
-    <div class="container mx-auto px-4 py-8 bg-[url('images/bg4.png')] bg-cover bg-center rounded-xl shadow-lg my-12 max-w-6xl">
-        <h1 class="text-center mb-6 text-3xl font-bold flex items-center justify-center">
+
+    </div>
+</nav>
+
+
+<!-- Main order section-->
+<div class="container mx-auto px-4 py-8 bg-[url('images/bg4.png')] bg-cover bg-center rounded-xl shadow-lg my-12 max-w-6xl">
+
+    <!-- Section Title -->
+    <h1 class="text-center mb-6 text-3xl font-bold flex items-center justify-center">
         <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
         </svg>
-            ORDER SECTION
-        </h1>
-        
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            
-            <div class="lg:col-span-8">
-                <div class="bg-gray-100 rounded-lg p-8 max-h-96 overflow-y-auto">
+        ORDER SECTION
+    </h1>
+
+    <!-- Two-column layout for products + cart -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+
+        <!-- Product list-->
+        <div class="lg:col-span-8">
+            <div class="bg-gray-100 rounded-lg p-8 max-h-96 overflow-y-auto">
+
+                <!-- Products Header -->
                 <h4 class="text-lg font-semibold mb-4 flex items-center">
-                        
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
-                </svg>
-                        Products
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                    </svg>
+                    Products
                 </h4>
                 <div id="productGrid" class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-3 gap-8"></div>
-                </div>
             </div>
-            
-            <div class="lg:col-span-4 lg:pl-6">
-                <h2 class="text-white font-bold mb-4 flex items-center">
+        </div>
+
+
+        <!-- =Display product and total -->
+        <div class="lg:col-span-4 lg:pl-6">
+
+            <h2 class="text-white font-bold mb-4 flex items-center">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.1 5H19M7 13l-1.1 5M7 13h10m0 0v8a2 2 0 01-2 2H9a2 2 0 01-2-2v-8"></path>
-                    </svg>
-                    Your Cart
-                </h2>
-                <div id="cartItems">
-                    <p class="text-white">Your cart is empty.</p>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                    <span class="text-lg font-bold text-sky-100">Total: RM<span id="totalPrice">0</span></span>
-                    <button onclick="checkout()" id="checkoutBtn" class="bg-blue-600 hover:bg-red-700 text-white px-4 py-2 rounded-md disabled:opacity-100" disabled>Checkout</button>
-        </div>
-        </div>
-        </div>
-    </div>
+                </svg>
+                Your Cart
+            </h2>
 
-    <!-- Checkout modal popup -->
-    <div id="checkoutModal" class="modal-overlay">
-        <div class="modal-content bg-white rounded-lg shadow-lg p-6">
-         <div class="flex justify-between items-center mb-4">
-        <h5 class="text-lg font-semibold flex items-center">
-        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-                    </svg>
+            <!-- Cart Items (filled by JS) -->
+            <div id="cartItems">
+                <p class="text-white">Your cart is empty.</p>
+            </div>
+
+            <!-- Cart total + Checkout button -->
+            <div class="flex justify-between items-center mt-4">
+                <span class="text-lg font-bold text-sky-100">Total: RM<span id="totalPrice">0</span></span>
+
+                <!-- Checkout disabled when cart is empty -->
+                <button onclick="checkout()" id="checkoutBtn" class="bg-blue-600 hover:bg-red-700 text-white px-4 py-2 rounded-md disabled:opacity-100" disabled>
                     Checkout
-                </h5>
-                <button onclick="closeModal()" class="text-white hover:text-sky-200">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                 </svg>
                 </button>
             </div>
-            <form id="checkoutForm">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <div>
-                        <label class="block text-sm font-medium mb-1">Full Name</label>
-                        <input type="text" class="w-full px-3 py-2 border rounded-md" id="name" required>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium mb-1">Email</label>
-                        <input type="email" class="w-full px-3 py-2 border rounded-md" id="email" required>
-                    </div>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-sm font-medium mb-1">Shipping Address</label>
-                    <input type="text" class="w-full px-3 py-2 border rounded-md" id="address" required>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-sm font-medium mb-1">Payment Method</label>
-                    <select class="w-full px-3 py-2 border rounded-md" id="paymentMethod" required>
-                        <option value="">Select Payment Method</option>
-                        <option value="credit_card">Credit Card</option>
-                        <option value="paypal">TNG E-wallet</option>
-                        <option value="bank_transfer">FPX</option>
-                        <option value="cod">Cash on Delivery (COD)</option>
-                    </select>
-                </div>
-                <div id="creditCardFields" class="hidden mb-4">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div class="md:col-span-2">
-                            <label class="block text-sm font-medium mb-1">Card Number</label>
-                            <input type="text" class="w-full px-3 py-2 border rounded-md" id="cardNumber" placeholder="1234 5678 9012 3456">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-1">Expiry Date</label>
-                            <input type="text" class="w-full px-3 py-2 border rounded-md" id="expiry" placeholder="MM/YY">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-1">CVV</label>
-                            <input type="text" class="w-full px-3 py-2 border rounded-md" id="cvv" placeholder="123">
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <div class="flex justify-end space-x-2">
-                <button onclick="closeModal()" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md">Cancel</button>
-                <button onclick="processPayment()" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Complete Payment</button>
-            </div>
+
         </div>
+
     </div>
-<!-- Background video element -->
-<video id="bg-video" autoplay muted loop playsinline>
-<source src="images/bgv.mp4" type="video/mp4">
-</video>
-    <!-- JavaScript file for order logic -->
-    <script src="orders.js"></script>
-    <!-- Footer at bottom -->
-     <footer class="mt-auto bg-slate-800 text-white py-4 px-4 text-center">
-        &copy; 2025 WORLDSTORE. All Rights Reserved.
-    </footer>
-</body>
-</html>
+</div>
+
+
+<!--Checkout section for user to buy product-->
+<div id="checkoutModal" class="modal-overlay">
+
+    <!-- Inner modal box -->
+    <div class="modal-content bg-white rounded-lg shadow-lg p-6">
+
+        <!-- Modal header with close button -->
+        <div class="flex justify-between items-center mb-4">
+
+            <h5 class="text-lg font-semibold flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                </svg>
+                Checkout
+            </h5>
+
+            <!-- Close modal button -->
+            <button onclick="closeModal()" class="text-white hover:text-sky-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Checkout form inputs -->
+        <form id="checkoutForm">
+
+            <!-- User info fields -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Full Name</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-md" id="name" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Email</label>
+                    <input type="email" class="w-full px-3 py-2 border rounded-md" id="email" required>
+                </div>
+            </div>
+
+            <!-- Address field -->
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1">Shipping Address</label>
+                <input type="text" class="w-full px-3 py-2 border rounded-md" id="address" required>
+            </div>
+
+            <!-- Payment method selection -->
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1">Payment Method</label>
+                <select class="w-full px-3 py-2 border rounded-md" id="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="paypal">TNG E-wallet</option>
+                    <option value="bank_transfer">FPX</option>
+                    <option value="cod">Cash on Delivery (COD)</option>
+                </select>
+            </div>
+
+            <!-- Credit card fields (hidden by default) -->
+            <div id="creditCardFields" class="hidden mb-4">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                    <!-- Card number -->
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium mb-1">Card Number</label>
+                        <input type="text" class="w-full px-3 py-2 border rounded-md" id="cardNumber" placeholder="1234 5678 9012

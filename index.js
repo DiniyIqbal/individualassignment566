@@ -18,7 +18,7 @@ function login() {
     // Check if entered credentials match any in the array
     const isValid = validCredentials.some(cred => cred.username === username && cred.password === password);
     
-    // If valid, direct to homepage or  error
+    
     if (isValid) {
         window.location.href = "homepage.html"; 
     } else {
