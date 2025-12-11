@@ -63,17 +63,21 @@ new Chart(ctx, {
     }
 });
 
-const usersTableBody = document.getElementById('usersTableBody');
 usersData.forEach(user => {
     const row = document.createElement('tr');
     row.innerHTML = `
-        <td class="px-4 py-2">${user.id}</td>
-        <td class="px-4 py-2">${user.name}</td>
-        <td class="px-4 py-2">${user.email}</td>
-        <td class="px-4 py-2">${user.joined}</td>
+        <td class="px-3 py-2">${user.id}</td>
+        <td class="px-3 py-2 whitespace-nowrap">${user.name}</td>
+
+        <td class="px-3 py-2 max-w-[220px] truncate" title="${user.email}">
+            ${user.email}
+        </td>
+
+        <td class="px-3 py-2 whitespace-nowrap">${user.joined}</td>
     `;
     usersTableBody.appendChild(row);
 });
+
 
 const productsTableBody = document.getElementById('productsTableBody');
 productsData.forEach(product => {

@@ -12,15 +12,14 @@
         .block-animate {
             animation: appear linear;
             animation-timeline: view();
-            animation-range: entry 70% cover 20%;
+            animation-range: entry 60% cover 20%;
         }
 
         body {
-            background-image:url(images/bg5.png); 
+            background-image: url(images/bg5.png);
             background-attachment: fixed;
             background-size: cover;
             font-family: 'Times New Roman', Times, serif;
-            font-size: 40px;
             
         }
        
@@ -48,7 +47,7 @@
     }
 
     /* Added for mobile responsiveness */
-    @media (max-width: 768px) {
+    @media (max-width: 700px) {
         body {
             font-size: 16px; /* Reduce base font size on mobile */
         }

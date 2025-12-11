@@ -75,30 +75,36 @@
         <h1 class="text-4xl font-bold mt-8 mb-8">WORLD STORE Dashboard</h1>
         <div class="bg-gray-700 p-6 rounded-lg shadow-md mb-8">
         <h3 class="text-2xl text-center text-white font-bold mb-4">Total Purchased by Product</h3>
-        <canvas id="productsChart" class="bg-sky-100 rounded-xl" width="400" height="140"></canvas>
+        <canvas id="productsChart"
+        class="bg-sky-100 rounded-xl w-full max-h-[300px]">
+</canvas>
+
     </div>
         
         
-    <div class="bg-sky-100 p-6 rounded-xl shadow-md mb-8 overflow-x-auto">
-        <h3 class="text-2xl text-center font-bold mb-4">List of Users</h3>
-        <table class="min-w-full table-auto">
-            <thead>
-                <tr class="bg-green-500">
-                    <th class="px-4 py-2 text-left">ID</th>
-                    <th class="px-4 py-2 text-left">Name</th>
-                    <th class="px-4 py-2 text-left">Email</th>
-                <th class="px-4 py-2 text-left">Joined Date</th>
-                </tr>
-            </thead>
-                <tbody id="usersTableBody">
+    <div class="bg-sky-100 p-6 rounded-xl shadow-md mb-8">
+  <h3 class="text-2xl text-center font-bold mb-4">List of Users</h3>
 
-        </tbody>
-        </table>
-        </div>
-        
-    <div class="bg-sky-100 p-6 rounded-lg shadow-md mb-8 overflow-x-auto">
+  <!-- Scroll wrapper -->
+  <div class="w-full overflow-x-auto">
+    <table class="min-w-[700px] w-full table-auto text-sm md:text-base">
+      <thead>
+        <tr class="bg-green-500">
+          <th class="px-3 py-2 text-left">ID</th>
+          <th class="px-3 py-2 text-left">Name</th>
+          <th class="px-3 py-2 text-left">Email</th>
+          <th class="px-3 py-2 text-left whitespace-nowrap">Joined Date</th>
+        </tr>
+      </thead>
+      <tbody id="usersTableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="w-full overflow-x-auto">   
+    <div class="bg-sky-100 p-6 rounded-lg shadow-md mb-8">
             <h3 class="text-2xl text-center font-bold mb-4">Total Products Purchased</h3>
-            <table class="min-w-full table-auto">
+             <table class="min-w-[800px] w-full table-auto text-sm md:text-base"> 
             <thead>
                 <tr class="bg-yellow-500">
                     <th class="px-4 py-2 text-left">Product Name</th>
@@ -110,12 +116,14 @@
     <tbody id="productsTableBody">
                     
     </tbody>
-        </table>
-        </div>
-        
-    <div class="bg-sky-100 p-6 rounded-lg shadow-md overflow-x-auto">
+    </table>
+    </div>
+    </div>
+
+    <div class="w-full overflow-x-auto">    
+    <div class="bg-sky-100 p-6 rounded-lg shadow-md">
             <h3 class="text-2xl text-center font-bold mb-4">Shipping Status</h3>
-            <table class="min-w-full table-auto">
+           <table class="min-w-[800px] w-full table-auto text-sm md:text-base"> 
             <thead>
                 <tr class="bg-red-300">
                      <th class="px-4 py-2 text-left">Order ID</th>
