@@ -22,10 +22,11 @@ World Store is a responsive and interactive e-commerce website for user and admi
 This project include authentication and  login functionality.  
 To test the page:  
 1. Open the live website link, or open `index.html` (or the main HTML file) locally in a browser.
-2. Enter username and password  / guest (demo)  
-3. Browse products, add items to cart, and click **Checkout**.  
-4. Fill in the checkout form and submit.  
-5. Checkout process (payment logic) is simulated in JavaScript — no real payment or backend required.  
+3. Enter username and password  / guest (demo)  
+4. Browse products, add items to cart, and click **Checkout**.  
+5. Fill in the checkout form and submit.  
+6. Checkout process (payment logic) is simulated in JavaScript — no real payment or backend required.
+7. To return to Dashboard (Landing page), click logo or "World Store" text at navigation bar.
 
 >  Note: Since there is no backend or database, all data is hardcoded in JavaScript arrays, and changes reset on page reload.  
 
